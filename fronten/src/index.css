@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    /* Add appropriate height value */
+}
+
+a {
+    text-decoration: none;
+    color: #000; /* Add appropriate color */
+}
+
+p {
+    line-height: 1.7; /* Add appropriate line height */
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    line-height: 2.2; /* Add appropriate line height */
+}
+
+h1, h2, h3 {
+    font-weight: 600; /* Add appropriate font weight */
+    margin-bottom: 20px; /* Add appropriate margin */
+}
+
+.container {
+    width: 100%; /* Add appropriate width */
+    max-width: 960px; /* Add appropriate max-width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Add appropriate padding */
+    text-align: center;
+}
+
+/* Continue with the rest of your styles... */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add appropriate padding */
+  border-bottom: 1px solid #6e6e6e; /* Add appropriate border */
+  margin-bottom: 20px; /* Add appropriate margin */
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px; /* Add appropriate margin */
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777; /* Add appropriate color */
+}
+
+.header ul li a svg {
+  margin-right: 5px; /* Add appropriate margin */
+}
+
+.heading {
+  font-size: 24px; /* Add appropriate font size */
+  font-weight: 700; /* Add appropriate font weight */
+  margin-bottom: 15px; /* Add appropriate margin */
+  padding: 0 10px; /* Add appropriate padding */
+}
+
+.heading p {
+  color: #282828; /* Add appropriate color */
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust grid template columns */
+  gap: 10px; /* Add appropriate gap */
+}
+
+.goal {
+  background-color: #f4f4f4; /* Add appropriate background color */
+  margin: 0 10px; /* Add appropriate margin */
+  padding: 10px 20px; /* Add appropriate padding */
+  position: relative;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px; /* Add appropriate position */
+  right: 10px; /* Add appropriate position */
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Continue with the rest of your styles... */
+.form,
+.content {
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto; /* Center align */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Add appropriate margin */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%; /* Adjust width as needed */
+    padding: 5px; /* Add appropriate padding */
+    border: 1px solid #6e6e6e; /* Add appropriate border */
+    border-radius: 5px; /* Add appropriate border radius */
+    margin-bottom: 10px; /* Add appropriate margin */
+    font-family: inherit;
+}
+
+.form-group label {
+    text-align: left;
+    display: block;
+    margin: 3px 0 5px; /* Add appropriate margin */
+}
+
+.btn {
+    padding: 5px 10px; /* Add appropriate padding */
+    border: 1px solid #000; /* Add appropriate border */
+    border-radius: 5px; /* Add appropriate border radius */
+    background: #000; /* Add appropriate background color */
+    color: #fff; /* Add appropriate color */
+    font-size: 16px; /* Add appropriate font size */
+    font-weight: 700; /* Add appropriate font weight */
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn svg {
+    margin-right: 8px; /* Add appropriate margin */
+}
+
+.btn-reverse {
+    background: #fff; /* Add appropriate background color */
+    color: #000; /* Add appropriate color */
+}
+
+.btn-block {
+    width: 100%; /* Adjust width as needed */
+    margin-bottom: 10px; /* Add appropriate margin */
+}
+
+.btn:hover {
+    transform: scale(0.95); /* Adjust scale as needed */
+}
+
+.loadingSpinnerContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    z-index: 1005; /* Add appropriate z-index */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingSpinner {
+    width: 46px; /* Adjust width as needed */
+    height: 46px; /* Adjust height as needed */
+    border: 8px solid transparent; /* Adjust border width as needed */
+    border-color: #fff #555 #fff #000; /* Adjust border colors */
+    border-radius: 5%; /* Add appropriate border radius */
+    animation: spin 2s infinite; /* Add appropriate animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 90%; /* Adjust width as needed */
+    }
+    .heading h1 {
+        font-size: 22px; /* Adjust font size as needed */
+    }
+    .heading p {
+        font-size: 15px; /* Adjust font size as needed */
+    }
+}
+
+/* Continue with the rest of your styles... */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.main-picture {
+    grid-column: 2 / 4;
+    background-color: #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.picture-1, .picture-2 {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.picture-1 {
+    grid-column: 2 / 3;
+}
+
+.picture-2 {
+    grid-column: 3 / 4;
+}
+.grid-gap{
+
+margin: 0px 0px 20px;
+
+}
+.rect-size{
+height: 150px;
+
+}
+.rect-size-small{
+
+height:75px;
+}
+.logo-size{
+
+max-width: 110%;
+height: auto;
+
+}
+.spices-size{
+
+max-width: 70%;
+height: auto;
+
+}
+.box{
+    padding:0 1rem;
+    background:#fff;
+    border-radius: .2rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
